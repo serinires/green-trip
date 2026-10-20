@@ -1,0 +1,27 @@
+{
+  "version": "kr-gg-202401",
+  "region": "KR",
+  "unit": "gCO2/passenger-km",
+  "source": {
+    "name": "경기도_시군구간 이동수단별 탄소배출량 데이터 (기준년월 202401)",
+    "publisher": "경기도 AI미래행정과",
+    "url": "https://www.data.go.kr/data/15128454/fileData.do",
+    "license": "공공저작물_출처표시 + 상업적 이용금지",
+    "method": "탄소 배출량 / (인구 수 x 이동 거리) 로 역산. 수단별 133개 행 모두 동일 값."
+  },
+  "factors": {
+    "car": 148,
+    "bus": 63,
+    "express_bus": 63,
+    "subway": 19,
+    "train": 19,
+    "flight": 123,
+    "walk": 0,
+    "bicycle": 0
+  },
+  "notes": {
+    "bicycle": "원자료에 자전거 항목 없음. 기타(코드 7)=0 및 주행 중 직접 배출 0으로 가정.",
+    "train": "원자료는 기차를 KTX/일반으로 구분하지 않음.",
+    "unit": "원자료에 단위 표기 없음. 승용차 148이 국내 문헌값(115~210)과 같은 범위라 g/인km로 판단."
+  }
+}
